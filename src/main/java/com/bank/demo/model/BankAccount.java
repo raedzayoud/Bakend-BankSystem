@@ -22,6 +22,6 @@ public class BankAccount {
     @Column(nullable = false)
     private double balance;
     @Column(nullable = false)
-    private String accountHolderName;
+    private String accountholdername;
 
 }

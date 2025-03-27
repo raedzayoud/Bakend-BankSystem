@@ -15,7 +15,7 @@ public class BankAccountService {
 
     // Get By Account Holder Name
     public BankAccount findByaccountHolderName(String AccountHolderName) {
-        BankAccount bankAccount = bankAccountRepository.findByaccountHolderName(AccountHolderName);
+        BankAccount bankAccount = bankAccountRepository.findByaccountholdername(AccountHolderName);
         if (bankAccount == null) {
             throw new NoSuchElementException("The Account Holder Name is not found");
         }
@@ -25,11 +25,6 @@ public class BankAccountService {
 
     // Post Account
     public BankAccount Create(BankAccount bankAccount) {
-        return bankAccountRepository.save(bankAccount);
-    }
-
-    // Update Account
-    public BankAccount Update(BankAccount bankAccount) {
         return bankAccountRepository.save(bankAccount);
     }
 

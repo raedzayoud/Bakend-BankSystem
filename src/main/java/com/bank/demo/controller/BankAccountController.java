@@ -18,8 +18,8 @@ public class BankAccountController {
     @Autowired
     private BankAccountService bankAccountService;
 
-    @GetMapping("/{accountholdername}")
-    public BankAccount findByaccountHolderName(@PathVariable("accountholdername") String accountHolderName) {
+    @GetMapping("/{accountHolderName}")
+    public BankAccount findByaccountHolderName(@PathVariable("accountHolderName") String accountHolderName) {
         return bankAccountService.findByaccountHolderName(accountHolderName);
     }
 
